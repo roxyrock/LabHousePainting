@@ -1,0 +1,122 @@
+html {
+    background-color: rgb(102, 213, 250);
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#house {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: bisque;
+    border: 1px solid black;
+   
+}
+
+#house div {
+    position: absolute;
+}
+
+#roof {
+    width: 500px;
+    height: 80px;
+    border: 1px solid rgb(130, 62, 3);
+    background-color: rgb(192, 99, 19);
+    top: 0;
+}
+
+#chimney {
+  position: absolute;
+  top: -70px;  
+  right: 50px;
+  width: 50px;
+  height: 70px;
+  background-color: rgb(169, 92, 5);
+  border: 1px solid rgb(95, 53, 4);
+  z-index: -1; 
+}
+
+#window-1,
+#window-2 {
+    width: 100px;
+    height: 200px;
+    border: 1px solid rgb(171, 188, 228);
+    background: linear-gradient(135deg, white 20%, rgb(143, 237, 237) 80%);
+    top: 110px;
+}
+
+#window-1 {
+    left: 50px;
+}
+
+#window-2 {
+    right: 50px;
+}
+
+#door {
+    width: 150px;
+    height: 250px;
+    position:absolute;
+    left: 185px;
+    transform: translateY(6px);
+    border: 1px solid black;
+    background-color: white;
+    bottom: 0%;
+}
+
+.door-line {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 50%;
+    width: 2px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.handle {
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    width: 10px;
+    height: 10px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+#house,
+#roof,
+#chimney,
+#window-1,
+#window-2, #door
+{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+#step-1, #step-2{
+    position:absolute;
+    height:20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #a48b7e;
+}
+#step-1 {
+  bottom: -10px;
+  left: 160px;
+  width: 180px;    
+}
+
+#step-2 {
+  bottom: -30px;
+  left: 145px;
+  width: 230px;   
+}
